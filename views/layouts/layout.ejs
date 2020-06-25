@@ -9,11 +9,13 @@
 
 <body>
 
-    Before <br>
-    <!--body part will be different in all other pages---->
-    <%= body  %>
+    <br>
+    <%- include('../partials/header.ejs')%>
+        <%- include('../partials/errorMessage.ejs')%>
+            <!--body part will be different in all other pages---->
+            <%- body  %>
 
-        <br> After
+                <br>
 
 </body>
 
